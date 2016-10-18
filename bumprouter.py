@@ -31,7 +31,7 @@ with open("/home/pi/bin/notification.txt", "a") as text_file:
 
 GPIO.output(7, True) ## Turn on GPIO pin 7 - opens relay
 time.sleep(15) ## Wait 15 seconds before restarting router
-GPIO.output(7, False) ## Turn on GPIO pin 7 - let relay close again
+GPIO.output(7, False) ## Turn off GPIO pin 7 - let relay close again
 GPIO.cleanup()
 
 with open("/home/pi/bin/routerreset.log", "a") as text_file:
